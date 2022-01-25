@@ -615,6 +615,33 @@ img {
   padding: 1.214rem 2.6rem;
 }
 
+.design-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.1rem;
+}
+.design-title__text {
+  text-align: center;
+  max-width: 53rem;
+  max-height: 4.07rem;
+  font-size: 1.25rem;
+  line-height: 1.93rem;
+}
+.design-title__image {
+  position: relative;
+}
+.design-title__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 19, 0.3);
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;
@@ -634,10 +661,6 @@ img {
   }
   .hero__content {
     margin-left: 0;
-  }
-
-  .design__card {
-    margin-bottom: 5.7rem;
   }
 }
 @media screen and (max-width: 760px) {
