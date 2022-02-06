@@ -1,10 +1,11 @@
-.hero
+.hero 
     position: relative
     display: flex
     flex-direction: column
     justify-content: center
+    align-items: flex-start
     padding-top: 100px
-    background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
+    background: $dark url('../img/hero_bg.jpg') no-repeat center / cover
     height: 100vh
     color: $light
     &::before
@@ -15,18 +16,28 @@
         width: 100%
         height: 100%
         background-color: rgba($dark, 0.7)
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 3.46rem
+        background-color: $dark
     &__content
         position: relative
         max-width: 47.85rem
         margin-left: 4.28rem
     &__text
-        font-size: 1.3rem
-        max-width: 504px
-        line-height: 1.7
-        margin-bottom: 3rem
+        font-size: 1.57rem
+        line-height: 130%
+        max-width: 500px
+        margin-top: 1rem
+        margin-bottom: 3.6rem
     &__button
-        margin-right: 15px
-        padding: 18px 21px
+        padding: 19px 29px
+        margin-right: 1.3rem
     &__instagram
         position: absolute
         left: 0
@@ -35,32 +46,33 @@
         height: 100%
     &__scroll-down
         position: absolute
+        z-index: 3
         display: flex
         justify-content: center
         align-items: center
         left: 0
         bottom: 0
-        font-family: 'Yeseva One', cursive
-        font-size: 0.87rem
         min-width: 17.6rem
         min-height: 6.92rem
+        font-family: 'Yeseva One' 
+        font-size: 0.85rem
         background-color: $dark
         text-transform: uppercase
         text-decoration: none
         color: $light
         &::after
             content: ''
-            background: url('../img/arrow-down.svg') no-repeat center
-            width: 29px
-            height: 29px
+            background: url('../img/arrow-down.svg') no-repeat center 10px
+            width: 30px
+            height: 30px
             border: 2px solid $primary
             border-radius: 50%
-            margin-left: 12px
+            margin-left: 1.2rem
 .instagram
     display: flex
     justify-content: center
     align-items: center
-    background-color: $dark
+    background-color: $dark 
     &__link
         display: flex
         align-items: center
@@ -68,19 +80,19 @@
         text-decoration: none
         color: $primary
         transform: rotate(90deg)
-        font-size: 0.95rem
         line-height: 0.8
+        font-size: 1.1rem
         &::after
             content: ''
-            width: 51px
+            width: 50px
             height: 1px
             background-color: $primary
             margin-left: 8px
 .title
     margin: 0
-    font-family: 'Yeseva One', cursive
+    font-family: 'Yeseva One' 
     text-transform: uppercase
     font-size: 2.857rem
-    line-height: 1.3
+    line-height: 3.8rem
     &--primary
         color: $primary
