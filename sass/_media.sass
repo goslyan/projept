@@ -144,6 +144,9 @@
         &__policy-label
             color: $light
 @media screen and ( max-width: 760px)
+    .hero
+        &__scroll-down
+            display: none
     .row
         flex-direction: column
         align-items: center
@@ -196,10 +199,9 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+            &--outline
+                width: 100%
 @media screen and ( max-height: 520px )
-    .hero
-        &__scroll-down
-            display: none
     .control
         .video
             &__play
